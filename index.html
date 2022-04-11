@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>LOTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Bienvenue au super Loto</h1>
+
+  <label for="firstname">Prénom</label>
+  <input type="text" id="firstname" name="firstname">
+  <br>
+  <p id="errorfirstname" style="color:red; display: none; font-style: italic; font-size: 10px; margin: 0;">Veuillez fournir un prénom</p>
+  <br>
+  <label for="lastname">Nom de famille</label>
+  <input type="text" id="lastname" name="lastname">
+  <br>
+  <p id="errorlastname" style="color:red; display: none; font-style: italic; font-size: 10px; margin: 0;">Veuillez fournir un nom de famille</p>
+  <br>
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+  <br>
+  <p id="erroremail" style="color:red; display: none; font-style: italic; font-size: 10px; margin: 0;">Merci de renseigner un email</p>
+
+  <h2>Vos numéros : (entre 1 et 49)</h2>
+  <input type="number" id="n1" name="n1" min="1" max="49" size="2">
+  <input type="number" id="n2" name="n2" min="1" max="49" size="2">
+  <input type="number" id="n3" name="n3" min="1" max="49" size="2">
+  <input type="number" id="n4" name="n4" min="1" max="49" size="2">
+  <input type="number" id="n5" name="n5" min="1" max="49" size="2">
+  <input type="number" id="n6" name="n6" min="1" max="49" size="2">
+  <br>
+  <p id="errornumber" style="color:red; display: none; font-style: italic; font-size: 10px; margin: 0;">Merci de compléter tous les numéros</p>
+  <br>
+  <input type ="submit" id="submit" value="Jouer">
+
+  <br>
+  <h1 id="result"></h1>
+
+
+  <script src="index.js"></script>
+
+</body>
+</html>
